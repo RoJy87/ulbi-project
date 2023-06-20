@@ -1,0 +1,21 @@
+{
+  "create component": {
+    "prefix": "rc",
+    "body": [
+      "import { classNames } from 'shared/lib/classNames/classNames';",
+      "import cls from './$TM_FILENAME_BASE.module.scss';",
+      "",
+      "interface ${2:$TM_FILENAME_BASE}Props {",
+      "  className?: string;",
+      "}",
+      "",
+      "export const ${1:$TM_FILENAME_BASE} = ({ className }: ${3:$TM_FILENAME_BASE}Props) => {",
+      "  return (",
+      "    <div className={classNames(cls.$TM_FILENAME_BASE, {}, [className])}>",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "create component"
+  }
+}
